@@ -1,0 +1,25 @@
+{
+  "name": "observe-stream",
+  "version": "0.0.0",
+  "description": "A browser mixin that lets you update and observe Object properties using streams.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michaelrhodes/observe-stream.git"
+  },
+  "keywords": [
+    "observe",
+    "duplex",
+    "stream",
+    "browser",
+    "mixin"
+  ],
+  "author": "Michael Rhodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelrhodes/observe-stream/issues"
+  }
+}
