@@ -38,6 +38,11 @@ input.addEventListener('input', function() {
 
 // Make them talk
 model.pipe(input).pipe(model)
+
+// Let us interact
+window.model = model
+window.input = input
+document.body.appendChild(input)
 ```
 
 ### License
