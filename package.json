@@ -1,8 +1,11 @@
 {
   "name": "observe-stream",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A browser mixin that lets you update and observe Object properties using streams.",
   "main": "index.js",
+	"dependencies": {
+    "stream-mixin": "0.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
