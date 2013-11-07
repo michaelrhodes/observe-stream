@@ -1,7 +1,7 @@
 # observe-stream
 observe-stream is a thin layer on top of [stream-mixin](https://github.com/michaelrhodes/stream-mixin) that turns Objects and Functions into duplex streams so they can accept and announce changes to their properties. It’s intended use is multi-way data-binding in the browser.
 
-\[ soon: tests \]
+[![Browser support](https://ci.testling.com/michaelrhodes/observe-stream.png)](https://ci.testling.com/michaelrhodes/observe-stream)
 
 ## Install
 

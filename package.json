@@ -1,13 +1,28 @@
 {
   "name": "observe-stream",
-  "version": "0.0.2",
-  "description": "A browser mixin that lets you update and observe Object properties using streams.",
+  "version": "0.0.3",
+  "description": "A browser mixin that lets you update and observe changes to Object properties using streams.",
   "main": "index.js",
-	"dependencies": {
+  "dependencies": {
     "stream-mixin": "0.0.0"
   },
+  "devDependencies": {
+    "tape": "~2.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1" 
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": {
+      "ie": [6, 7, 8, 9, 10],
+      "chrome": [20, 25, 29],
+      "firefox": [4, 19, 24],
+      "safari": [5.1, 6],
+      "opera": [10, 12, 15],
+      "iphone": [6],
+      "android": [4.2]
+    }
   },
   "repository": {
     "type": "git",
