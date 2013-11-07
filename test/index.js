@@ -5,6 +5,7 @@ var observe = require('../')
 run('it works', function(test) {
   test.plan(2)
 
+  var done = false
   var model = { key: 'value' }
   var input = document.createElement('input')
   input.type = 'checkbox'
@@ -16,6 +17,10 @@ run('it works', function(test) {
   input.writable = true
   input.write = function(data) {
     input.value = data.key
+    if (done) {
+      return
+    }
+    done = true
     input.click()
   }
   
