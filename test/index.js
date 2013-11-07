@@ -3,6 +3,8 @@ var stream = require('stream-mixin')
 var observe = require('../')
 
 run('it works', function(test) {
+  test.plan(2)
+
   var model = { key: 'value' }
   var input = document.createElement('input')
   input.type = 'checkbox'
@@ -21,7 +23,8 @@ run('it works', function(test) {
 
   input.onclick = function() {
     test.equal(input.value, 'new value')
-    test.end()
+    input.emit('data', { key: 'newer value' })
+    test.equal(model.key, 'newer value')
   }
 
   model.key = 'new value'
