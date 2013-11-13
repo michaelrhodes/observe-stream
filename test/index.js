@@ -26,7 +26,7 @@ run('it works', function(test) {
   model.pipe(input).pipe(model)
 
   var handle = function() {
-    input.removeEventListener('click', handle)
+    input.onclick = null
     
     // The input value should have automatically
     // updated to match the model.
@@ -43,7 +43,7 @@ run('it works', function(test) {
     test.end()
   }
 
-  input.addEventListener('click', handle)
+  input.onclick = handle
 
   // Get the ball rolling by updating the model.
   model.key = 'new value'
