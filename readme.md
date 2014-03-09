@@ -10,6 +10,7 @@ $ npm install observe-stream
 ```
 
 ## Usage
+Hate reading code? [See this example running!](http://michaelrhodes.github.io/observe-stream/)
 ``` js
 var stream = require('stream-mixin')
 var observe = require('observe-stream')

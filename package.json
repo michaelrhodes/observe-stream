@@ -1,6 +1,6 @@
 {
   "name": "observe-stream",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A browser mixin that lets you update and observe changes to Object properties using streams.",
   "main": "index.js",
   "dependencies": {
