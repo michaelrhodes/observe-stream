@@ -39,6 +39,8 @@ module.exports = function() {
       }
     }
   }
+
+  this.end = function() {}
   
   // Allow additional properties to be added
   // after the mixin has been called.

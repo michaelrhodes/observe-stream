@@ -21,6 +21,8 @@ run('it works', function(test) {
     input.value = data.key
     input.click()
   }
+
+  input.end = function() {}
  
   // Make them talk 
   model.pipe(input).pipe(model)
@@ -39,6 +41,18 @@ run('it works', function(test) {
     // The model should have updated to use the
     // user-defined value.
     test.equal(model.key, 'newer value')
+
+    // If the model emits an end event, subsequent
+    // changes to key shouldn’t be passed along.
+    model.emit('end')
+    model.key = 'newest value'
+    test.equal(input.value, 'newer value')
+
+    // And likewise with the input
+    input.emit('end')
+    input.value = 'newest-er value'
+    input.emit('data', { key: input.value })
+    test.equal(model.key, 'newest value')
 
     test.end()
   }

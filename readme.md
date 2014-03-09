@@ -31,6 +31,7 @@ input.writable = true
 input.write = function(data) {
   this.value = data.name
 }
+input.end = function() {}
 
 input.value = model.name
 input.addEventListener('input', function() {
