@@ -14,15 +14,15 @@
   },
   "testling": {
     "files": "test/*.js",
-    "browsers": {
+    "browsers": [
       "ie/8..latest"
       "chrome/22..latest",
-      "firefox": [4, 19, "latest"],
+      "firefox/4..latest",
       "safari/5.1..latest",
       "opera/11..latest",
       "iphone/6..latest",
       "android-browser/latest"
-    }
+    ]
   },
   "repository": {
     "type": "git",
