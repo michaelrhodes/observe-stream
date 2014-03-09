@@ -8,7 +8,7 @@ run('it works', function(test) {
   observe.call(model)
 
   // Setup checkbox (ie. some DOM element)
-  var input = document.createElement('input')  
+  var input = document.createElement('input')
   input.type = 'checkbox'
   input.readable = true
   input.writable = true
@@ -44,6 +44,7 @@ run('it works', function(test) {
   }
 
   input.onclick = handle
+  document.body.appendChild(input)
 
   // Get the ball rolling by updating the model.
   model.key = 'new value'

@@ -1,6 +1,6 @@
 {
   "name": "observe-stream",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A browser mixin that lets you update and observe changes to Object properties using streams.",
   "main": "index.js",
   "dependencies": {
@@ -15,13 +15,13 @@
   "testling": {
     "files": "test/*.js",
     "browsers": {
-      "ie": [6, 7, 8, 9, 10],
-      "chrome": [20, 25, 29],
-      "firefox": [4, 19, 24],
-      "safari": [5.1, 6],
-      "opera": [10, 12, 15],
-      "iphone": [6],
-      "android": [4.2]
+      "ie/8..latest"
+      "chrome/22..latest",
+      "firefox": [4, 19, "latest"],
+      "safari/5.1..latest",
+      "opera/11..latest",
+      "iphone/6..latest",
+      "android-browser/latest"
     }
   },
   "repository": {
