@@ -18,6 +18,8 @@ input.writable = true
 input.write = function(data) {
   this.value = data.name
 }
+input.end = function() {
+}
 
 input.value = model.name
 input.addEventListener('input', function() {
@@ -29,6 +31,7 @@ model.pipe(input).pipe(model)
 
 // Let us interact
 window.model = model
+window.input = input
 document.body.insertBefore(input, document.querySelector('h2'))
 
 },{"observe-stream":2,"stream-mixin":3}],2:[function(require,module,exports){
@@ -72,6 +75,10 @@ module.exports = function() {
         this[property] = data[property]
       }
     }
+  }
+
+  this.end = function() {
+
   }
   
   // Allow additional properties to be added
