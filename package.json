@@ -16,10 +16,17 @@
     "files": "test/*.js",
     "browsers": [
       "ie/8..latest",
-      "chrome/22..latest",
-      "firefox/4..latest",
+      "chrome/10",
+      "chrome/22",
+      "chrome/latest",
+      "firefox/4",
+      "firefox/8",
+      "firefox/18",
+      "firefox/latest",
       "safari/5.1..latest",
-      "opera/11..latest",
+      "opera/11.6",
+      "opera/12",
+      "opera/latest",
       "iphone/6..latest",
       "android-browser/latest"
     ]
